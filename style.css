@@ -160,10 +160,24 @@ p{
 
 
 /* fetures shipping */
+
+
+
+
+
+
+
 .feture_shipping{
     padding: 40px 80px;
 }
 
+#feture{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
 #feture .fe-box{
     width: 150px;
     text-align: center;
@@ -175,9 +189,10 @@ p{
 }
 #feture .fe-box img{
     height: 80px;
-    width: 80px;
+    width: 80%;
     object-fit: cover;
     margin-bottom: 10px;
+
 }
 #feture .fe-box:hover{
     box-shadow:  10px 10px 50px rgba(20, 20, 20, 0.1);
@@ -186,12 +201,28 @@ p{
 
 #feture .fe-box h6{
     padding: 9px 8px 8px 8px;
-    background-color: #ad8af3;
+    background-color: #69e0ed;
     border-radius: 4px;
     color: white;
     cursor: pointer;
     display: inline-block;
 
+}
+
+#feture .fe-box:nth-child(2) h6{
+    background-color: #3eacfa;
+}
+#feture .fe-box:nth-child(3) h6{
+    background-color: #e94b85;
+}
+#feture .fe-box:nth-child(4) h6{
+    background-color: #e75fdb;
+}
+#feture .fe-box:nth-child(5) h6{
+    background-color: #8486f1;
+}
+#feture .fe-box:nth-child(6) h6{
+    background-color: #3eacfa;
 }
 
 
