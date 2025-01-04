@@ -28,7 +28,7 @@ h4{
 }
 
 h6{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -53,19 +53,25 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
-    background-color: rgba(0, 173, 254, 0.554);
+    background: rgb(162, 198, 214);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+     
 }
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    list-style: none;
-    
+
 }
+
 #navbar li{
-    margin: 0 25px;
-    cursor: pointer;
+    list-style: none;
+    padding: 0 20px;
     position: relative;
 }
 
@@ -74,6 +80,7 @@ p{
     color: #1a1a1a;
     font-size: 16px;
     font-weight: 600;
+    transition: 0.3s ease;
 }
 #navbar li a:hover,
 #navbar li a.active{
@@ -84,13 +91,12 @@ p{
 #navbar li a.active::after,
 #navbar li a:hover::after{
     content: '';
-    display: block;
-    width: 70%;
+    width: 30%;
     height: 2px;
     background: #461f93;
     position: absolute;
-    bottom: -4px;
-    right: 10px;
+    bottom: -2px;
+    left: 20px;
 
 }
 
@@ -99,17 +105,17 @@ p{
 /*home_page_start*/
 
 #hero{
-    /*background-image: url("cycle.png");
-    background-size: cover;*/
+    
     background-color: rgb(162, 198, 214);
     background-position: top 25px right 0;
-    height: 95vh;
+    height: 100vh;
     width: 100%;
-    padding: 0px 150px;
+    padding: 0px 120px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-bottom: 120px;
     
 }
 
@@ -122,11 +128,11 @@ p{
 }
 
 .back_img{
-    height: 60%;
+    height: auto;
     width: 60%;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
-    top: 180px;
+    top: 40px;
     right: 50px;
     display: flex;
 
@@ -151,4 +157,45 @@ p{
 #hero p{
     text-decoration: underline;
 }
+
+
+/* fetures shipping */
+.feture_shipping{
+    padding: 40px 80px;
+}
+
+#feture .fe-box{
+    width: 150px;
+    text-align: center;
+    padding: 10px 15px;
+    box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid #11a7e2;
+    border-radius: 10px;
+    margin: 15px 0; 
+}
+#feture .fe-box img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+#feture .fe-box:hover{
+    box-shadow:  10px 10px 50px rgba(20, 20, 20, 0.1);
+
+}
+
+#feture .fe-box h6{
+    padding: 9px 8px 8px 8px;
+    background-color: #ad8af3;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+
+
+
+
 
