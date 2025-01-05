@@ -135,6 +135,7 @@ p{
     top: 40px;
     right: 50px;
     display: flex;
+    transition: all 0.3s linear;
 
     
 }
@@ -226,7 +227,7 @@ p{
 }
 
 
-
+/*product start*/
 
 
 
